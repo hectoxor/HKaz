@@ -117,6 +117,7 @@ def analyze_trends(df):
 def create_visualizations(df, output_dir):
     """Create enhanced visualizations for the e-commerce dataset"""
     
+    
     # 1. Combined line plot of all metrics
     plt.figure(figsize=(14, 8))
     for col in df.columns[1:]:
