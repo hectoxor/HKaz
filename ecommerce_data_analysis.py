@@ -192,6 +192,7 @@ def create_visualizations(df, output_dir):
             pct_change = ((end_val - start_val) / start_val) * 100 if start_val > 0 else float('inf')
             
             # Add textbox with growth stats
+            
             stats_text = (
                 f"Growth Summary ({start_year}-{end_year}):\n"
                 f"Starting: {start_val:.1f}%\n"
