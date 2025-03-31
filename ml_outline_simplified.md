@@ -33,4 +33,4 @@ The recommendation engine in the model demonstrates how an e-commerce platform c
 
 4. **Competitive advantage**: Using predictive analytics to match customers with the right fitness products for their specific profile, leading to higher conversion rates and customer satisfaction.
 
-This approach leverages the predictive power of the fitness adherence model to create a focused, data-driven e-commerce strategy for the Hong Kong market.
+Thus we can use the predictive power of the fitness adherence model to create a focused, data-driven e-commerce strategy for the Hong Kong market.
