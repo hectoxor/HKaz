@@ -143,18 +143,25 @@ metrics_text = (
     "• Y4-Y5: 40% Growth\n"
     "• CAGR: 87%"
 )
-props = dict(boxstyle='round', facecolor='white', alpha=0.7)
-ax.text(1.5, 400, metrics_text, fontsize=10,
-        verticalalignment='top', horizontalalignment='left',
-        bbox=props)
 
-# Improve appearance
-ax.set_ylim(bottom=0)
-ax.set_xlim(0.8, 20.2)  # Give a bit of padding on both sides
-ax.set_ylabel('Revenue (HKD Millions)', fontsize=12)
-ax.set_xlabel('Quarter / Year', fontsize=12)
-ax.set_title('5-Year Revenue Projection by District Phase', fontsize=16, pad=20)
+# Enhanced styling for the metrics box to prevent overlap
+props = dict(
+    boxstyle='round,pad=0.6',
+    facecolor='white', 
+    edgecolor='gray',
+    alpha=0.9  # More opaque background
+)
 
+# Move to a better position and increase zorder to keep it on top
+ax.text(
+    16.5, 125,  # Position in top-right instead of left side
+    metrics_text, 
+    fontsize=10,
+    verticalalignment='top', 
+    horizontalalignment='left',
+    bbox=props,
+    zorder=15  # Higher zorder ensures it stays on top of other elements
+)
 # Add a footnote
 plt.figtext(0.5, 0.01, "Based on 1fit growth model and Hong Kong market analysis\nProjections include 20% confidence interval", 
             ha="center", fontsize=9, style='italic')
