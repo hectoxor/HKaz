@@ -36,3 +36,5 @@
 - **Preprocessing:** Some datasets require cleaning (e.g., handling negative `Quantity` values in the Kaggle dataset ).  
 
 For niche needs (e.g., luxury goods or regional markets), explore specialized datasets like **Net-a-Porter (Hong Kong)**  or **Etsy product listings** .
+
+https://data.gov.hk/en-data/dataset/hk-had-json1-hong-kong-administrative-boundaries
